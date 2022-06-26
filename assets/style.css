@@ -1,0 +1,154 @@
+
+.header {
+  position: relative;
+  padding: 0px;
+  background-color: #2a607c;
+}
+.me {
+  position: relative;
+  left: 40px;
+  bottom: 10px;
+  border-radius: 20px;
+}
+
+h1 {
+  position: relative;
+  left: 300px;
+  top: 120px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 50px;
+  color: #ffffff;
+}
+
+a {
+  color: #ffffff;
+  font-size: 20px;
+}
+
+nav ul li {
+  position: relative;
+  display: flex;
+  display: inline;
+  float: inline-end;
+  left: 70%;
+  bottom: 10px;
+  margin-right: 10px;
+}
+
+figcaption {
+  position: relative;
+  top: -30px;
+  left: 20px;
+  color: #ffffff;
+}
+
+
+
+.zoom {
+  display: inline-block;
+  justify-content:space-between;
+  transition: transform .2s;
+  /* width: 300px; 
+  height: 200px;
+  margin: 10px; */
+  text-align: center;
+}
+
+.zoom:hover {
+  transform: scale(1.5);
+}
+
+p {
+  font-size: 20px;;
+}
+
+h2 {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 30px;
+  font-style: italic;
+  color: #2a607c;
+  text-decoration:dashed;
+  padding: 20px;
+}
+
+h2::before {
+  content: '\2766' ;
+}
+
+h3 {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 100px;
+  font-size: 20px;
+  color: green;
+  display: inline-block;
+}
+
+.parent {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin-right: 50px;
+}
+
+#phone-text {
+  text-decoration: underline;
+  margin-right: 50px;
+}
+
+.phone-number .show-number {
+  position: relative;
+  text-decoration: none;
+  display: none;
+  padding: 1% 0;
+  
+}
+
+.phone-number:hover .show-number {
+  display: block;
+  text-decoration: none;
+}
+
+#email-text {
+  margin-right: 50px;
+  text-decoration: underline;
+}
+
+.email .show-email {
+  position: relative;
+  display: none;
+  padding: 1% 0;
+}
+
+.email:hover .show-email {
+  display: block;
+}
+
+
+#linkedin-text {
+  text-decoration: underline;
+}
+
+.linkedin .show-linkedin {
+  display: none;
+  padding: 1% 0;
+}
+
+.linkedin:hover .show-linkedin {
+  display: block;
+  color: #000;
+} 
+
+@media screen and (max-width: 768px) {
+  header, body, nav {
+    flex-direction: column;
+  }
+
+  section {
+    padding-right: 0;
+  }
+
+  aside {
+    width: 100%;
+    text-align: center;
+  }
+}
